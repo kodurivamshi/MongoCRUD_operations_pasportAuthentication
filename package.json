@@ -30,6 +30,7 @@
     "passport-session": "^1.0.2"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.3"
   }
 }
