@@ -1,0 +1,35 @@
+{
+  "name": "mongocrud_operations_pasportauthentication",
+  "version": "1.0.0",
+  "description": "mongoDB CRUD operations & passport AUTHENTICATION",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodurivamshi/MongoCRUD_operations_pasportAuthentication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kodurivamshi/MongoCRUD_operations_pasportAuthentication/issues"
+  },
+  "homepage": "https://github.com/kodurivamshi/MongoCRUD_operations_pasportAuthentication#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.9",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

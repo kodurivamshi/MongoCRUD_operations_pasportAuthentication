@@ -1,0 +1,38 @@
+<%- include('header'); -%>
+
+<% if(users.length>0) { %>
+<br>
+<br>
+<br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for(var i=0;i<users.length;i++){ %>
+            <tr class="table-primary">
+                <td><%= i %></td>
+                <td><%= users[i].user_data[0].user_name %></td>
+                <td><%= users[i].user_data[0].user_mail %></td>
+                <td><%= users[i].user_data[0].user_mobile %></td>
+                
+                <td>
+                    <a href="/users/edit/<%= users[i].user_data[0]._id %>">Edit</a>
+                    <a href="/users/delete/<%= users[i].user_data[0]._id %>">delete</a>
+                    <a href="/users/show/<%= users[i].user_data[0]._id %>">show</a>
+                </td>
+            
+            </tr>
+        </tbody>
+        <% } %>
+    </table>
+
+<% } else { %>
+    <br><br><table><tbody><tr class="table-secondary"><b>NO Record Found</b></tr></tbody></table>
+    <% } %>

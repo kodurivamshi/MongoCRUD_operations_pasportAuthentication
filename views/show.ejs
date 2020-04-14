@@ -1,0 +1,30 @@
+
+<%- include('header'); -%>
+
+<br>
+<br><br>
+<table class="table table-hover">
+        <tbody>
+        <tr class="table-warning">
+                        <td>ID</td>
+                        <td>:</td>
+                        <td><%= users._id %></td>
+        </tr>
+          <tr class="table-warning">
+            <td>Name</td>
+            <td>:</td>
+            <td><%= users.user_name %></td>
+          </tr>
+          <tr class="table-warning">
+            <td>Email</td>
+            <td>:</td>
+            <td><%= users.user_mail %></td>
+          </tr>
+          <tr class="table-warning">
+            <td>Mobile</td>
+            <td>:</td>
+            <td><%= users.user_mobile %></td>
+          </tr>
+           
+        </tbody>
+      </table>

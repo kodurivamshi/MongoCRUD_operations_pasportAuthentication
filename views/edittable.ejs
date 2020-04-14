@@ -1,0 +1,46 @@
+<%- include('header'); -%>
+
+<br>
+<br>
+<br>
+
+<form method="post">
+
+    <table class="table table-hover">
+        <tbody>
+        <tr class="table-primary">
+            <td>Name : </td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="user_name" value="<%= users.user_name %>" required> </td>
+        </tr>
+        <tr class="table-primary">
+            <td> Email :</td>
+            <td>
+                <input type="text" placeholder="Enter Email" name="user_mail" value="<%= users.user_mail %>" required>
+            </td>
+        </tr>
+        <tr class="table-primary">
+            <td>Mobile :</td>
+            <td>
+                <input type="text" placeholder="Enter Mobile" name="user_mobile" value="<%= users.user_mobile %>" required>
+            </td>
+        </tr>
+
+        <tr class="table-secondary">
+
+            <td>
+                <input type="submit" value="Edit"class="btn btn-primary">
+                  <input type="button"  class="btn btn-primary" value="Display" onclick="window.location='/users/display';">
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+
+
+
+
+</form>
+
+ 

@@ -1,0 +1,30 @@
+<%- include('header'); -%>
+<BR>
+    <BR>
+<form method="POST" action="/users/add">
+    <table class="table table-hover">
+
+        <tr class="table-primary">
+            <td>Name: </td>
+            <td><input type="text" placeholder="enter name" name="user_name" required></td>
+        </tr>
+        <tr class="table-primary">
+            <td>Email: </td>
+            <td><input type="E-mail" placeholder="enter mail id" name="user_mail" required></td>
+        </tr>
+        <tr class="table-primary">
+            <td>Mobile: </td>
+            <td><input type="text" placeholder="entrer number" name="user_mobile" required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" class="btn btn-success">
+                <input type="button" value="Display"class="btn btn-info" onclick="window.location='/users/display'"></td>
+        </tr>
+    </table>
+
+</form>
+
+
+
+
+
